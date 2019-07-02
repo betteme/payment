@@ -1,0 +1,6 @@
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+server:
+  port: 8080
