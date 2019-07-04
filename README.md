@@ -118,6 +118,7 @@ String params = request.getParameterMap()
 
 # 创建钱包地址
     
+    
 **简要描述：** 
 
 - 创建钱包地址
@@ -138,7 +139,7 @@ String params = request.getParameterMap()
 **请求示例：** 
 ``` 
 {
-	"coinCode": "eth",
+	"coinCode": "ETH",
 	"userId": "001"
 }
 ```
@@ -148,12 +149,14 @@ String params = request.getParameterMap()
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |address |string   |钱包地址  |
+|memo |string   |石墨烯系列会有此值，如EOS  |
 
  **返回示例：**
 
 ``` 
 {
-    "address": "0xb96775a20168e28a018a6e3b9e876377c9cee2a8"
+    "address": "0xb96775a20168e28a018a6e3b9e876377c9cee2a8",
+    "memo": null
 }
 
 ```
@@ -182,7 +185,7 @@ String params = request.getParameterMap()
 
 **请求示例：** 
 ``` 
-code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
+code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 ```
 
  **返回参数说明：** 
@@ -225,7 +228,7 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 **请求示例：** 
 ``` 
 {
-	"coinCode": "eth",
+	"coinCode": "ETH",
 	"amount": 10.0,
 	"address": "0xb96775a20168e28a018a6e3b9e876377c9cee21s"
 }
@@ -285,17 +288,17 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 ``` 
 [
     {
-        "coinCode": "eth",
+        "coinCode": "ETH",
         "availBalance": 90,
         "freeAmount": 10
     },
     {
-        "coinCode": "btc",
+        "coinCode": "BTC",
         "availBalance": 0,
         "freeAmount": 0
     },
     {
-        "coinCode": "usdt",
+        "coinCode": "USDT",
         "availBalance": 0,
         "freeAmount": 0
     }
@@ -340,7 +343,7 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 
 ``` 
 {
-    "coinCode": "eth",
+    "coinCode": "ETH",
     "availBalance": 90,
     "freeAmount": 10
 }
@@ -398,7 +401,7 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
     "data": [
         {
             "orderNo": "CZ201904071321035151",
-            "coinCode": "usdt",
+            "coinCode": "USDT",
             "address": "myGRpVUTgY2Mv3S4MyoyzdiwqDSDx3XLBp",
             "amount": 0.01,
             "status": 2,
@@ -406,7 +409,7 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
         },
         {
             "orderNo": "CZ201903252315445140",
-            "coinCode": "eth",
+            "coinCode": "ETH",
             "address": "0xf298173431cf9a4e0189f04ddebefabeac8d3d40",
             "amount": 1,
             "status": 1,
@@ -466,7 +469,7 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
     "data": [
         {
             "orderNo": "TX201904102107287788",
-            "coinCode": "eth",
+            "coinCode": "ETH",
             "toAddress": "0xb96775a20168e28a018a6e3b9e876377c9cee21s",
             "amount": 10,
             "charge": 0.1,
@@ -475,7 +478,7 @@ code=eth&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
         },
         {
             "orderNo": "TX201904071236145275",
-            "coinCode": "usdt",
+            "coinCode": "USDT",
             "toAddress": "myGRpVUTgY2Mv3S4MyoyzdiwqDSDx3XLBp",
             "amount": 0.01,
             "charge": 0.00000257,
