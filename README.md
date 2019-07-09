@@ -591,3 +591,62 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 }
 ```
 
+# 1.10 地址列表
+
+**简要描述：** 
+
+- 分页查询地址列表
+
+**请求URL：** 
+- ` /v1/addresses `
+  
+**请求方式：**
+- GET 
+
+**请求参数：** 
+
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+|offset  |是  |int  |当前页 0开始
+|limit  |是  |int  |每页查询条数
+|coinCode  |否  |string  |币种代码
+
+**请求示例：** 
+``` 
+?coinCode=ETH
+```
+
+ **返回参数说明：** 
+
+|参数名|类型|说明|
+|:-----  |:-----|-----                           |
+|address |string   |地址  |
+|memo |string   |MEMO(石墨烯系列用)  |
+|coinCode |string   |币种代码  |
+|userId |string   |商家平台用户标识  |
+|createTime |date   |创建时间  |
+
+ **返回示例：**
+
+``` 
+{
+    "recordsTotal": 2,
+    "data": [
+        {
+            "address": "mk19uJwvHnbqGeTiov1oxyqJVCvJGrCZFy",
+            "memo": null,
+            "userId": "001",
+            "coinCode": "BTC",
+            "createTime": "2019-04-13 20:53:46"
+        },
+        {
+            "address": "0x8c2d65febe80e97057f53ffac95100c01ea446a0",
+            "memo": null,
+            "userId": "1001",
+            "coinCode": "ETH",
+            "createTime": "2019-03-24 20:22:55"
+        }
+    ]
+}
+```
+
