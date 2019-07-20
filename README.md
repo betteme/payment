@@ -387,6 +387,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |orderNo |string   |托管平台订单号  |
+|txHash |string   |交易hash  |
 |coinCode |string   |充值币种  |
 |address |string   |充值地址  |
 |amount |double   |充值金额  |
@@ -401,6 +402,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
     "data": [
         {
             "orderNo": "CZ201904071321035151",
+	     "txHash":"e9264451a32e049339e010b1edc7ed16f6755fc4266602d0c31afa68e60e337b",
             "coinCode": "USDT",
             "address": "myGRpVUTgY2Mv3S4MyoyzdiwqDSDx3XLBp",
             "amount": 0.01,
@@ -409,6 +411,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
         },
         {
             "orderNo": "CZ201903252315445140",
+	    "txHash":"84b4d493907e2c963bb319e0dbb8d10fac37f814278d0ad0367030e74f877c1f",
             "coinCode": "ETH",
             "address": "0xf298173431cf9a4e0189f04ddebefabeac8d3d40",
             "amount": 1,
@@ -455,6 +458,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 |参数名|类型|说明|
 |:-----  |:-----|-----                           |
 |orderNo |string   |托管平台订单号  |
+|txHash |string   |交易hash  |
 |coinCode |string   |提现币种  |
 |toAddress |string   |提现地址  |
 |amount |double   |提现金额  |
@@ -469,6 +473,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
     "data": [
         {
             "orderNo": "TX201904102107287788",
+	     "txHash":"84b4d493907e2c963bb319e0dbb8d10fac37f814278d0ad0367030e74f877c1f",
             "coinCode": "ETH",
             "toAddress": "0xb96775a20168e28a018a6e3b9e876377c9cee21s",
             "amount": 10,
@@ -478,6 +483,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
         },
         {
             "orderNo": "TX201904071236145275",
+	     "txHash":"e9264451a32e049339e010b1edc7ed16f6755fc4266602d0c31afa68e60e337b",
             "coinCode": "USDT",
             "toAddress": "myGRpVUTgY2Mv3S4MyoyzdiwqDSDx3XLBp",
             "amount": 0.01,
