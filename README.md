@@ -521,7 +521,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 |orderNo  |是  |string  |托管平台订单号
 |address  |是  |string  |收账地址
 |amount  |是  |double  |充值金额
-|txHash  |是  |date  |交易hash
+|txHash  |是  |string  |交易hash
 
 **请求示例：** 
 ``` 
@@ -573,7 +573,7 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |orderNo  |是  |string  |托管平台订单号
-|txHash  |是  |date  |交易hash
+|txHash  |是  |string  |交易hash
 
 **请求示例：** 
 ``` 
