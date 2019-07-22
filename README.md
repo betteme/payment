@@ -573,11 +573,13 @@ code=ETH&address=0xfdba8c3140e8a390f20080dd17d1a5f5e70cd979
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
 |orderNo  |是  |string  |托管平台订单号
+|txHash  |是  |date  |交易hash
 
 **请求示例：** 
 ``` 
 {
-	"orderNo": "CZ201903252315445140"
+	"orderNo": "CZ201903252315445140",
+	"txHash": "0x05819d768d454a794f7e0b75e9873cb3693f262fe638ee718e1d086fcdaa4b2d"
 }
 ```
 
